@@ -18,7 +18,11 @@ const FeaturedJob = ({featuredJobs}) => {
             }
             
             </div>
-            
+            <div className='text-center my-10'>
+                {
+                showAll ? <button className='btn btn-active rounded-md my-2 btn-color' onClick={() => setShowAll(false)}>Show All</button> : <button className='btn btn-active rounded-md my-2 btn-color' onClick={() => setShowAll(true)}>Show Less</button>
+                }
+            </div>
         </div>
     );
 };
